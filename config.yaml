@@ -18,10 +18,10 @@ params:
 menu:
   nav:
     - name: Blog
-      url: /Blogs/
+      url: Blogs/
       weight: 1
     - name: WhoAmI
-      url: /whoami/
+      url: whoami/
       weight: 2
 
 
