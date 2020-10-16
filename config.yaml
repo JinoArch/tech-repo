@@ -1,0 +1,53 @@
+baseURL: https://jinoarch.github.io/tech-repo
+languageCode: en-us
+defaultContentLanguage: en
+title: Jinos Blog
+theme: cupper-hugo-theme
+
+params:
+  description: DevOps And Python Programmer
+  homeMetaContent: DevOps And Python Programmer
+  footer: Rolling Release + Maintained By Jino Jose
+  dateFormat: Oct 8, 2020
+  katex: true
+  darkThemeAsDefault: false
+  hideHeaderLinks: false
+  search: true
+
+
+menu:
+  nav:
+    - name: Blog
+      url: /Blogs/
+      weight: 1
+    - name: WhoAmI
+      url: /whoami/
+      weight: 2
+
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+  highlight:
+    codeFences: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
