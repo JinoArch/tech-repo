@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>issue on Jinos Blog</title>
+    <link>https://jinoarch.github.io/tech-repo/tags/issue/</link>
+    <description>Recent content in issue on Jinos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0530</lastBuildDate><atom:link href="https://jinoarch.github.io/tech-repo/tags/issue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Hugo worked for me??</title>
+      <link>https://jinoarch.github.io/tech-repo/blogs/why-hugo/</link>
+      <pubDate>Thu, 15 Oct 2020 08:13:33 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/blogs/why-hugo/</guid>
+      <description>Since my BTech course completion I was thinking to make a blog site. I stepped out from college in 2018. Now its 2020. You now know how much late am I.
+I will try my best to write my blogs in simple english.I mean, Anyway I know only simple english.
+2020 the pandemic year&amp;hellip;which made whole world to sit and spend time with family&amp;hellip;Looking from one side its good but it has its disadvantages too&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

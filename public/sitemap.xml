@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/blogs/</loc>
+    <lastmod>2020-10-15T08:13:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/blogs/why-hugo/</loc>
+    <lastmod>2020-10-15T08:13:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/tags/issue/</loc>
+    <lastmod>2020-10-15T08:13:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/</loc>
+    <lastmod>2020-10-15T08:13:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/tags/</loc>
+    <lastmod>2020-10-15T08:13:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/whoami/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/categories/</loc>
+  </url>
+  
+</urlset>
