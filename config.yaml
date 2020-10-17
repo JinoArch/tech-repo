@@ -5,7 +5,7 @@ title: Jinos Blog
 theme: cupper-hugo-theme
 
 params:
-  description: DevOps And Python Programmer
+  description: DevOps Engineer And Python Programmer
   homeMetaContent: DevOps And Python Programmer
   footer: Rolling Release + Maintained By Jino Jose
   dateFormat: Oct 8, 2020
