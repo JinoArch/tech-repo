@@ -22,9 +22,9 @@ There are lot more helpful links available inside INTRANET which helps to create
 
 I don't like saving contents in my PC/mobile even if it is a mp3 or mp4 .... I pulls all online.
 
-And from github I can link it to my domain. Thats it. No more headaches.
+And from [github](https://gohugo.io/hosting-and-deployment/hosting-on-github/) I can link it to my domain. Thats it. No more headaches. You can even link your [custom domain](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-custom-domains-and-github-pages).
 
-After working around all these things next I searched was a simple and efficient theme... and you will not beleive hugo has a bulk of [themes](https://themes.gohugo.io/) as templates. 
+After working around all these things next I searched was a simple and efficient theme... and you will not believe hugo has a bulk of [themes](https://themes.gohugo.io/) as templates. 
 
 Most importantly, hugo supports json and yaml config file. And as a devops engineer and python programmer I love both json and yaml. Yet another advantage was [markdown file](https://www.markdownguide.org/getting-started/)
 
