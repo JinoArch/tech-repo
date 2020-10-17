@@ -97,11 +97,11 @@ link.run()
 ```
 
 
-Yeah I know code looks a bit weird! Since It was just a interview I didn't focused on security level much. But I do complete this before time. I think I took 5 hours continuous to understand docker library and another 2 hrs to build the whole code. 
+Yeah I know code looks a bit weird! Since It was just a interview I didn't focus on security level much. But I do complete this before time. I think I took 5 hours continuous to understand docker library and another 2 hrs to build the whole code. 
 
-Interviewer was pretty much okay with my code but was not happy. He asked me some more in depth questions which I didn't answered properly. The interviewer was good with my learning character and offered me the job. Ofcourse salary was more than I expected. 
+Interviewer was pretty much okay with my code but was not happy. He asked me some more questions in-depth which I didn't answer properly. The interviewer was good with my learning character and offered me the job. Ofcourse salary was more than I expected. 
 
-I searched a lot after that and understood its not in my code which made the interviewer unhappy but the questions asked. He asked me questions regarding computing and its types. I was only knowing distrubuted and parallel. Hmmm...Now I know this very well.
+I searched a lot after that, I understood its not in my code which made the interviewer unhappy but the questions asked. He asked me questions regarding computing and its types. I was only knowing distrubuted and parallel. Hmmm...Now I know this very well.
 
 Concluding, If you are looking for a systems engineer job you should learn ofcourse, yes! one programming language, architecture of systems and devops tools are plus.
 
