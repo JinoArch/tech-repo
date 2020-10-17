@@ -7,24 +7,21 @@ then
     exit 1;
 fi
 
-echo "Deleting old publication"
-rm -rf public
-mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
-
-echo "Checking out gh-pages branch into public"
+echo "checkout to gh-pages"
+git checkout origin/gh-pages
+echo "branch status"
+git branch
+echo "checkout to master"
+git checkout master
+echo "gh-pages pointed to public directory"
 git worktree add -B gh-pages public origin/gh-pages
-
-echo "Removing existing files"
+echo "removing contents from public folder"
 rm -rf public/*
-
-echo "Generating site using hugo"
+echo "removed contents ...Now lets build it"
+git submodule add -f https://github.com/zwbetz-gh/cupper-hugo-theme.git themes/cupper-hugo-theme
 hugo
-
-echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
-
-#echo "Pushing to github"
-#git push --all
+echo "adding the changes"
+cd public && git add --all && git commit -m "latest_gh_pages" && cd ..
+echo "Lets push this..."
+git push origin gh-pages
 
