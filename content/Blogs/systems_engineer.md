@@ -15,7 +15,7 @@ Among the interviews I attended the most challenging one that hit me was for the
 
 ![](/images/interview.png)
 
-First view, I was a bit afraid by the length of the question. But when they said deadline is 24 hours. I got my confidence back. As a devops engineer I am never into systems engineer position. But I do had the confidence that whatever question, anyone give me in IT I can do it from scratch. My plus was that I knew python and devops very well. 
+First view, I was a bit afraid by the length of the question. But when they said deadline is 24 hours. I got my confidence back. As a devops engineer I am never into systems engineer position. But I do had the confidence that whatever question, anyone give me in IT I could do it from scratch. My plus was that I knew python and devops very well. 
 
 I started planning the architecture and decided to do this in flask. I never made an API before but I do knew that flask maps requests and funtions. I was familiar with flask so never thought of django. You can do this in django too. 
 
