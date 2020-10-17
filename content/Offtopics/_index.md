@@ -1,3 +1,3 @@
 ---
-title: Offtopics
+title: offtopics
 ---

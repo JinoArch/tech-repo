@@ -20,9 +20,12 @@ menu:
     - name: Blog
       url: https://jinojose.online/blogs/
       weight: 1
+    - name: Offtopics
+      url: https://jinojose.online/offtopics/
+      weight: 2
     - name: WhoAmI
       url: https://jinojose.online/whoami/
-      weight: 2
+      weight: 3
 
 
 markup:
