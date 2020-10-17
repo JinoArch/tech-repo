@@ -13,7 +13,7 @@ No more questions. As said I went through 4-5 interviews among which I got selec
 
 Among the interviews I attended the most challenging one that hit me was for the post of systems engineer in Qblocks. Let me share the question they gave me.
 
-![Interview_Qblocks](https://github.com/JinoArch/tech-repo/blob/master/static/images/interview.png)
+![](/images/interview.png)
 
 First view, I was a bit afraid by the length of the question. But when they said deadline is 24 hours. I got my confidence back. As a devops engineer I am never into systems engineer position. But I do had the confidence that whatever question, anyone give me in IT I can do it from scratch. My plus was that I knew python and devops very well. 
 
