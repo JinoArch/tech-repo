@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0530</lastBuildDate><atom:link href="https://jinoarch.github.io/tech-repo/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Healthy?</title>
+      <link>https://jinoarch.github.io/tech-repo/offtopics/healthyfood/</link>
+      <pubDate>Sat, 17 Oct 2020 08:50:33 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/offtopics/healthyfood/</guid>
+      <description>Loading&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Systems Engineer/ Devops Interview</title>
+      <link>https://jinoarch.github.io/tech-repo/blogs/systems_engineer/</link>
+      <pubDate>Sat, 17 Oct 2020 02:02:31 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/blogs/systems_engineer/</guid>
+      <description>Loading!!!</description>
+    </item>
+    
+    <item>
       <title>How Hugo worked for me??</title>
       <link>https://jinoarch.github.io/tech-repo/blogs/why-hugo/</link>
       <pubDate>Thu, 15 Oct 2020 08:13:33 +0530</pubDate>
@@ -25,15 +43,6 @@ I will try my best to write my blogs in simple english.I mean, Anyway I know onl
       
       <guid>https://jinoarch.github.io/tech-repo/whoami/</guid>
       <description>Amigos! Jino here. profession--&amp;gt; Devops Engineer. I am a Tech surfer. My fav OS is Arch Linux. And loves programming and configuring low/high level systems. Python, Linux and DevOps are my strengths. Music makes me relax and concentrate. Playing football is yet another stuff I do to pass time. Lastly, I am a UKELELE player (beginner).  </description>
-    </item>
-    
-    <item>
-      <title>Healthy?</title>
-      <link>https://jinoarch.github.io/tech-repo/offtopics/healthyfood/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jinoarch.github.io/tech-repo/offtopics/healthyfood/</guid>
-      <description></description>
     </item>
     
   </channel>
