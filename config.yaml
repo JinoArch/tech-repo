@@ -18,10 +18,10 @@ params:
 menu:
   nav:
     - name: Blog
-      url: Blogs/
+      url: https://jinojose.online/blogs/
       weight: 1
     - name: WhoAmI
-      url: whoami/
+      url: https://jinojose.online/whoami/
       weight: 2
 
 
