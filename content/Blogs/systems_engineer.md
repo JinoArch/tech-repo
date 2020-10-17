@@ -6,7 +6,7 @@ tags: [build#3]
 
 Greetings! corona time.. Huh!? what to do? just job or gaming in mobile? Nope...After the start of corona first 2 month I took a course from [stephane maarek](https://www.udemy.com/user/stephane-maarek/) in udemy and by the last of second month I almost completed the course. I loved the course. After completing I was thinking what to do next and  decided to take interviews to make use of this year. By the way ..What you did? Nothing planned yet? You have to.
 
-No more questions. As said I went through 4-5 interviews among which I got selected in 3 for DevOps. And I rejected all 3 due to some freedom concepts and most likely I didn't wanted to switch to one.
+No more questions. As said I went through 4-5 interviews among which I got selected in 3 for DevOps. And I rejected all 3 due to some freedom concepts and most likely I didn't want to switch to one.
 
 "FREE AS IN FREEDOM" yes you heard it! I first heard this phrase from my friend PRINZ PUIZ. He looks similar to a mice but works as a django developer and is an open minded guy. I studied a lot from him both in IT and LIFE. I learned most of my stuffs from my BTech friends someway or the other and not much from books. Now I am a bit into this phrase. Not going more into offtopics... OKAY! focusing on the title.
 
