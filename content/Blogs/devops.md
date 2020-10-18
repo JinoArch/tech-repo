@@ -16,7 +16,7 @@ Only difference between a "build and release engineer" and a "DevOps engineer" i
 
 ## WHAT SKILLS A DEVOPS ENGINEER NEED?
 
-* Basic Knowledge of systems including kernel, boot process, memory allocation, web server, application servers
+* Basic Knowledge of systems including kernel, boot process, memory allocation, web server, application servers, bash scripting
 
 * Networking and Infrastucture. This plays a major role for us. Lack of knowledge in this field will lead to payload exposure.
 
