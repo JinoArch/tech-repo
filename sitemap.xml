@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jinoarch.github.io/tech-repo/blogs/</loc>
+    <lastmod>2020-10-18T01:02:31+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/tags/build#4/</loc>
+    <lastmod>2020-10-18T01:02:31+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/tags/</loc>
+    <lastmod>2020-10-18T01:02:31+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jinoarch.github.io/tech-repo/blogs/devops/</loc>
+    <lastmod>2020-10-18T01:02:31+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jinoarch.github.io/tech-repo/tags/build#2/</loc>
     <lastmod>2020-10-17T08:50:33+05:30</lastmod>
   </url>
@@ -15,16 +35,6 @@
   <url>
     <loc>https://jinoarch.github.io/tech-repo/offtopics/</loc>
     <lastmod>2020-10-17T08:50:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jinoarch.github.io/tech-repo/tags/</loc>
-    <lastmod>2020-10-17T08:50:33+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jinoarch.github.io/tech-repo/blogs/</loc>
-    <lastmod>2020-10-17T02:02:31+05:30</lastmod>
   </url>
   
   <url>

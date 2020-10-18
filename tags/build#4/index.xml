@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build#4 on Jinos Blog</title>
+    <link>https://jinoarch.github.io/tech-repo/tags/build#4/</link>
+    <description>Recent content in build#4 on Jinos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 01:02:31 +0530</lastBuildDate><atom:link href="https://jinoarch.github.io/tech-repo/tags/build#4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What a DevOps Engineer Does?</title>
+      <link>https://jinoarch.github.io/tech-repo/blogs/devops/</link>
+      <pubDate>Sun, 18 Oct 2020 01:02:31 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/blogs/devops/</guid>
+      <description>Eye opened for a new day again? Well, wish you all a good day.
+Most DevOps professional once was a systems administrator. Definitely, not neccessary. I have seen guys jumping from developer field to DevOps.
+I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6 months I jumped to the post of &amp;ldquo;build and release engineer&amp;rdquo;. In AMITI SOFTWARE TECHNOLOGIES I now work as a DevOps support engineer.</description>
+    </item>
+    
+  </channel>
+</rss>
