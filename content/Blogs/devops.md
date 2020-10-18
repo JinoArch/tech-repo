@@ -36,7 +36,7 @@ DevSecOps and MLOps are yet another branches of DevOps.
 
 ## WHAT DEVOPS ENGINEERS DO?
 
-In India most companies from medium scale to large scale maintains the automation codes developed by someone else, mostly on-site teams. I didn't included startups here because there you might need to configure and maintain at the same time. And I loves that. I love configuring systems and thats what my passion is.
+In India most companies from medium scale to large scale maintains the automation codes developed by someone else, mostly on-site teams. I didn't include startups here because there you might need to configure and maintain at the same time. And I loves that. I love configuring systems and thats what my passion is.
 
 So as a daily task we need to observe the work flows from PR generation --> build --> deployment. And troubleshooting the errors which occurs in these steps.
 
