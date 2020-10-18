@@ -21,7 +21,7 @@ I started planning the architecture and decided to do this in flask. I never mad
 
 So here is what I did in code:
 
-```
+```Python
 import flask
 import docker
 import os
@@ -97,7 +97,7 @@ link.run()
 ```
 
 
-Yeah I know code looks a bit weird! Since It was just a interview I didn't focus on security level much. But I do complete this before time. I think I took 5 hours continuous to understand docker library and another 2 hrs to build the whole code. 
+Yeah I know code looks a bit weird! Since It was just a interview I didn't focus on security level much. But I do complete this before time. I think I took 5 hours continuous to understand docker library and another 2 hrs to build the whole code. Also I created a dockerfile for that ssh container. 
 
 Interviewer was pretty much okay with my code but was not happy. He asked me some more questions in-depth which I didn't answer properly. The interviewer was good with my learning character and offered me the job. Ofcourse salary was more than I expected. 
 
