@@ -10,7 +10,7 @@ Most DevOps professional once was a systems administrator. Definitely, not necce
 
 I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6 months I jumped to the post of "build and release engineer". In AMITI SOFTWARE TECHNOLOGIES I now work as a DevOps support engineer. 
 
-DevOps... is a culture which brings developers and QA to work with a automation engineer automating day to day tasks. In this culture we uses tools and any one of the programming languages(you can use multiple ) to automate the process from generating the PR to deployment to the servers.
+DevOps... is a culture which brings developers and QA to work with an automation engineer to automate day to day tasks. In this culture we uses tools and any one of the programming languages(you can use multiple ) to automate the process from generating the PR to deployment to the servers.
 
 Only difference between a "build and release engineer" and a "DevOps engineer" is automation. And less headaches.
 
