@@ -12,7 +12,7 @@ I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6
 
 DevOps... is a culture which brings developers and QA to work with an automation engineer to automate day to day tasks. In this culture we uses tools and any one of the programming languages(you can use multiple ) to automate the process from generating the PR to deployment to the servers.
 
-Only difference between a "build and release engineer" and a "DevOps engineer" is that developer gets the power to build and deploy on servers right away.
+Only difference between a "build and release engineer" and a "DevOps engineer" is that developer gets the power to build and deploy on servers right away on the later.
 
 ## WHAT SKILLS A DEVOPS ENGINEER NEED?
 
