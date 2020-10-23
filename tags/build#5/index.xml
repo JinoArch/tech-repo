@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build#5 on Jinos Blog</title>
+    <link>https://jinoarch.github.io/tech-repo/tags/build#5/</link>
+    <description>Recent content in build#5 on Jinos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0530</lastBuildDate><atom:link href="https://jinoarch.github.io/tech-repo/tags/build#5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Kernel is fun</title>
+      <link>https://jinoarch.github.io/tech-repo/blogs/kernel/</link>
+      <pubDate>Thu, 15 Oct 2020 08:13:33 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/blogs/kernel/</guid>
+      <description>Bonsoir!
+I was going through some of my kernel docs today and suddenly gotta mood to write on the same. If I speak in simple language, what is kernel? It is nothing but a set of code which knows how to communicate with hardwares. Linux is mostly written in C with a bit of assembly language. Actually this kernel code understands how to interpret your keypresses when you press a key and/or how to communicate with your hard drive to write bytes to it and much more.</description>
+    </item>
+    
+  </channel>
+</rss>

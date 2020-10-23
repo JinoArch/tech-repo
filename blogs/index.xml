@@ -38,5 +38,15 @@ I will try my best to write my blogs in simple english.I mean, Anyway I know onl
 2020 the pandemic year&amp;hellip;which made whole world to sit and spend time with family&amp;hellip;Looking from one side its good but it has its disadvantages too&amp;hellip;</description>
     </item>
     
+    <item>
+      <title>Understanding Kernel is fun</title>
+      <link>https://jinoarch.github.io/tech-repo/blogs/kernel/</link>
+      <pubDate>Thu, 15 Oct 2020 08:13:33 +0530</pubDate>
+      
+      <guid>https://jinoarch.github.io/tech-repo/blogs/kernel/</guid>
+      <description>Bonsoir!
+I was going through some of my kernel docs today and suddenly gotta mood to write on the same. If I speak in simple language, what is kernel? It is nothing but a set of code which knows how to communicate with hardwares. Linux is mostly written in C with a bit of assembly language. Actually this kernel code understands how to interpret your keypresses when you press a key and/or how to communicate with your hard drive to write bytes to it and much more.</description>
+    </item>
+    
   </channel>
 </rss>
