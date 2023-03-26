@@ -1,8 +1,16 @@
----
-title: "What a DevOps Engineer Does?"
-date: Thu Oct 18 01:02:31 IST 2020
-tags: [build#4]
----
++++
+author = "Jino Jose"
+title = "What a DevOps Engineer Does?"
+date = "2019-10-18"
+description = "Devops Engineer"
+tags = [
+    "DevOps",
+]
+
+categories = [
+    "DevOps"
+]
++++
 
 Eye opened for a new day again? Well, wish you all a good day.
 

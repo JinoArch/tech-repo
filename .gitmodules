@@ -1,0 +1,3 @@
+[submodule "jinojose.in/themes/devise"]
+	path = jinojose.in/themes/devise
+	url = https://github.com/austingebauer/devise.git
