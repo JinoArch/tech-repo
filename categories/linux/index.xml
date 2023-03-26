@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Jinos Blog</title>
+    <link>https://www.jinojose.in/categories/linux/</link>
+    <description>Recent content in Linux on Jinos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018, Jino Jose</copyright>
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Kernel is fun</title>
+      <link>https://www.jinojose.in/post/kernel/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.jinojose.in/post/kernel/</guid>
+      <description>Bonsoir!
+I was going through some of my kernel docs today and suddenly gotta mood to write on the same. If I speak in simple language, what is kernel? It is nothing but a set of code which knows how to communicate with hardwares. Linux is mostly written in C with a bit of assembly language. Actually this kernel code understands how to interpret your keypresses when you press a key and/or how to communicate with your hard drive to write bytes to it and much more.</description>
+    </item>
+    
+  </channel>
+</rss>

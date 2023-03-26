@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Jinos Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="linux kernal" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/theme.min.css">
+
+    
+    
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../images/jino.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        Jino Jose
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Golang | DevOps |  AI/ML
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/JinoArch" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.linkedin.com/in/jino-jose-296928198" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Understanding Kernel is fun</h3>
+            
+            <small class="text-muted">Published February 15, 2020</small>
+        </div>
+
+        <article>
+            <p>Bonsoir!</p>
+<p>I was going through some of my kernel docs today and suddenly gotta mood to write on the same. If I speak in simple language, what is kernel? It is nothing but a set of code which knows how to communicate with hardwares. Linux is mostly written in C with a bit of assembly language. Actually this kernel code understands how to interpret your keypresses when you press a key and/or how to communicate with your hard drive to write bytes to it and much more. It can even speak TCP/IP.</p>
+<p>So how we are accessing the kernel? If you are a regular terminal user, you will poke kernel time to time. Yes! it is system calls. System calls work silently in the background, interfacing with the kernel to get the job done. Regular programs that you write can interact with your computer’s hardware using system calls.</p>
+<p>There are 2 types of modes which help us to use system calls. User mode and Kernel mode. Both are different by the factor of privileges and security. All user gets into USER MODE by default when an user session is started. And the through POSIX API we issue system calls to kernel. This is because playing with kernel mode can lead to kernel crashes and halt your PC. Unix-like systems comes with POSIX API making it available through GNU C Library to invoke a system call and woke up kernel. Technically if I go a bit deep, APIs are defined inside libc standard C library which then uses wrapper routines to issue a system call. So basically POSIX API are used in USER MODE to indirectly access system calls. System calls are just function we call directly from the code while API is just an interface to call that function indirectly.</p>
+<pre tabindex="0"><code>Command-line utility -&gt; Invokes functions from system libraries (glibc) -&gt; Invokes system calls
+</code></pre><p>So everytime you pass a system call through API in USER MODE, CPU switches to KERNEL MODE for executing the task. Simple! <a href="https://en.wikipedia.org/wiki/Trap_(computing)">Trap computing</a>. If you want to know which functions were called from the glibc library, ltrace is best.</p>
+<pre tabindex="0"><code>jino@jino-ThinkPad-T450:~/tech-repo$ ltrace ls
+strrchr(&#34;ls&#34;, &#39;/&#39;)                                                                                      = nil
+setlocale(LC_ALL, &#34;&#34;)                                                                                   = &#34;en_IN&#34;
+bindtextdomain(&#34;coreutils&#34;, &#34;/usr/share/locale&#34;)                                                        = &#34;/usr/share/locale&#34;
+textdomain(&#34;coreutils&#34;)                                                                                 = &#34;coreutils&#34;
+.
+.
+</code></pre><p>Lets see yet another command which captures and records all these system calls and the signals. <a href="https://www.youtube.com/watch?v=yWlqYsPPAyM">Strace</a> is among such which displays the name of each system call together with its arguments enclosed in a parenthesis and its return value to standard error, you can optionally redirect it to a file as well.</p>
+<p>Here I used strace to see what ls command does.</p>
+<pre tabindex="0"><code>jino@jino-ThinkPad-T450:~/ocp/example$ strace -o output &#34;ls&#34;
+jino  output
+</code></pre><p>I copied the standard out to a file. Strace will output a whole bunch of crap. So I just copied what is needed. The very first line you see is execve, name of a system call being executed. Text within the parentheses is the arguments provided to the system call.</p>
+<pre tabindex="0"><code>execve(&#34;/bin/ls&#34;, [&#34;ls&#34;], 0x7ffd180682d0 /* 61 vars */) = 0
+</code></pre><p>opening libraries</p>
+<pre tabindex="0"><code>openat(AT_FDCWD, &#34;/etc/ld.so.cache&#34;, O_RDONLY|O_CLOEXEC) = 3
+</code></pre><p>This step is to put into memory.</p>
+<pre tabindex="0"><code>mmap(NULL, 130161, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f54ea918000
+</code></pre><p>Get contents from the required directory.</p>
+<pre tabindex="0"><code>getdents(3, /* 4 entries */, 32768)     = 104
+getdents(3, /* 0 entries */, 32768)     = 0
+#close the directory
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+write(1, &#34;jino  output\n&#34;, 13)          = 13
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+</code></pre><p>Man page explains more than me. If you are intrested refer man. This is just .5%. There are a lot of stuffs that makes us interact with os like a pro. &ldquo;/proc&rdquo;, <a href="http://www.brendangregg.com/blog/2014-09-06/linux-ftrace-tcp-retransmit-tracing.html">ftrace</a>, perf are some.</p>
+<p>Kernel programming is fun if you are good at C. Am just aware of very few usages. But understands kernel now. Thats it. Have a good day.</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; 2018, Jino Jose
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+    </small>
+</footer>
+</body>
+</html>

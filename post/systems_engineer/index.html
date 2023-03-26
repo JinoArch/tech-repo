@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Jinos Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Systems Engineer Interview" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/theme.min.css">
+
+    
+    
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../images/jino.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        Jino Jose
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Golang | DevOps |  AI/ML
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/JinoArch" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.linkedin.com/in/jino-jose-296928198" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Systems Engineer/ Devops Interview</h3>
+            
+            <small class="text-muted">Published December 3, 2018</small>
+        </div>
+
+        <article>
+            <p>Greetings! corona time.. Huh!? what to do? just job or gaming in mobile? Nope&hellip;After the start of corona first 2 month I took a course from <a href="https://www.udemy.com/user/stephane-maarek/">stephane maarek</a> in udemy and by the last of second month I almost completed the course. I loved the course. After completing I was thinking what to do next and  decided to take interviews to make use of this year. By the way ..What you did? Nothing planned yet? You have to.</p>
+<p>No more questions. As said I went through 4-5 interviews among which I got selected in 3 for DevOps. And I rejected all 3 due to some freedom concepts and most likely I didn&rsquo;t want to switch to one.</p>
+<p>&ldquo;FREE AS IN FREEDOM&rdquo; yes you heard it! I first heard this phrase from my friend PRINZ PUIZ. He looks similar to a mice but works as a django developer and is an open minded guy. I studied a lot from him both in IT and LIFE. I learned most of my stuffs from my BTech friends someway or the other and not much from books. Now I am a bit into this phrase. Not going more into offtopics&hellip; OKAY! focusing on the title.</p>
+<p>Among the interviews I attended the most challenging one that hit me was for the post of systems engineer in Qblocks. Let me share the question they gave me.</p>
+<p><img src="../../images/interview.png" alt=""></p>
+<p>First view, I was a bit afraid by the length of the question. But when they said deadline is 24 hours. I got my confidence back. As a devops engineer I am never into systems engineer position. But I do had the confidence that whatever question, anyone give me in IT I could do it from scratch. My plus was that I knew python and devops very well.</p>
+<p>I started planning the architecture and decided to do this in flask. I never made an API before but I knew that flask maps requests and funtions. I was familiar with flask so never thought of django. You can do this in django too.</p>
+<p>So here is what I did in code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> flask
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> docker
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> request, session
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>link <span style="color:#f92672">=</span> flask<span style="color:#f92672">.</span>Flask(__name__)
+</span></span><span style="display:flex;"><span>link<span style="color:#f92672">.</span>config[<span style="color:#e6db74">&#34;DEBUG&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>link<span style="color:#f92672">.</span>secret_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JiNO&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@link.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">home</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Dusting off some old talents!!&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@link.route</span>(<span style="color:#e6db74">&#39;/api/&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">api</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Welcome to API&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>provid<span style="color:#f92672">=</span>random<span style="color:#f92672">.</span>randint(<span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">50000</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@link.route</span>(<span style="color:#e6db74">&#39;/api/provisionID&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prov</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;cpu&#39;</span> <span style="color:#f92672">in</span> request<span style="color:#f92672">.</span>args <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;mem&#39;</span> <span style="color:#f92672">in</span> request<span style="color:#f92672">.</span>args:
+</span></span><span style="display:flex;"><span>        cp<span style="color:#f92672">=</span>request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;cpu&#39;</span>)
+</span></span><span style="display:flex;"><span>        mem<span style="color:#f92672">=</span>request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;mem&#39;</span>)
+</span></span><span style="display:flex;"><span>        print (<span style="color:#e6db74">&#34;Input received!&#34;</span>)
+</span></span><span style="display:flex;"><span>        id_no<span style="color:#f92672">=</span>str(provid)
+</span></span><span style="display:flex;"><span>        session[<span style="color:#e6db74">&#34;id_no&#34;</span>]<span style="color:#f92672">=</span>id_no
+</span></span><span style="display:flex;"><span>        session[<span style="color:#e6db74">&#34;cp&#34;</span>]<span style="color:#f92672">=</span>cp
+</span></span><span style="display:flex;"><span>        session[<span style="color:#e6db74">&#34;mem&#34;</span>]<span style="color:#f92672">=</span>mem
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> (id_no)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> (<span style="color:#e6db74">&#34;To provision a container CPU and MEMORY data is neccessary. You can Include this is same URL.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74"> For example: http://127.0.0.1:5000/api/provisionID?cpu=1&amp;mem=300m&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@link.route</span>(<span style="color:#e6db74">&#39;/api/container&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">jin</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>  <span style="color:#e6db74">&#34;id_no&#34;</span> <span style="color:#f92672">in</span> session:
+</span></span><span style="display:flex;"><span>        prov_id <span style="color:#f92672">=</span>session[<span style="color:#e6db74">&#34;id_no&#34;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;prID&#39;</span>)<span style="color:#f92672">==</span>prov_id:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;cp&#34;</span> <span style="color:#f92672">in</span> session:
+</span></span><span style="display:flex;"><span>                cpu<span style="color:#f92672">=</span>session[<span style="color:#e6db74">&#34;cp&#34;</span>]
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;mem&#34;</span> <span style="color:#f92672">in</span> session:
+</span></span><span style="display:flex;"><span>                    mem<span style="color:#f92672">=</span>session[<span style="color:#e6db74">&#34;mem&#34;</span>]
+</span></span><span style="display:flex;"><span>                    client <span style="color:#f92672">=</span> docker<span style="color:#f92672">.</span>from_env()
+</span></span><span style="display:flex;"><span>                    p<span style="color:#f92672">=</span>client<span style="color:#f92672">.</span>containers<span style="color:#f92672">.</span>run(<span style="color:#e6db74">&#34;ssh_ubuntu&#34;</span>, stdin_open <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, tty <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>, detach<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, entrypoint<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/bin/bash&#39;</span>, cpu_count<span style="color:#f92672">=</span>int(cpu), mem_limit<span style="color:#f92672">=</span>mem, privileged<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, ports<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;22/tcp&#39;</span>: (<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">9876</span>)})
+</span></span><span style="display:flex;"><span>                    j<span style="color:#f92672">=</span>str(p)<span style="color:#f92672">.</span>split( )
+</span></span><span style="display:flex;"><span>                    q<span style="color:#f92672">=</span>j[<span style="color:#ae81ff">1</span>][:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>                    print (q)
+</span></span><span style="display:flex;"><span>                    container <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>containers<span style="color:#f92672">.</span>get(str(q))
+</span></span><span style="display:flex;"><span>                    e<span style="color:#f92672">=</span>vars( container )[<span style="color:#e6db74">&#34;attrs&#34;</span>][<span style="color:#e6db74">&#34;NetworkSettings&#34;</span>][<span style="color:#e6db74">&#34;Networks&#34;</span>][<span style="color:#e6db74">&#34;bridge&#34;</span>][<span style="color:#e6db74">&#34;IPAddress&#34;</span>]
+</span></span><span style="display:flex;"><span>                    print (<span style="color:#e6db74">&#34;IP address assigned:&#34;</span><span style="color:#f92672">+</span>e)
+</span></span><span style="display:flex;"><span>                    os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;sudo docker exec -it &#39;</span><span style="color:#f92672">+</span>str(q)<span style="color:#f92672">+</span><span style="color:#e6db74">&#39; /bin/bash -c &#34;service ssh start; apt-get install sshpass&#34;&#39;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;pass&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> request<span style="color:#f92672">.</span>args:
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> (<span style="color:#e6db74">&#34;no pass provided to login via ssh&#34;</span>)
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                        os<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#39;sshpass -p &#39;</span><span style="color:#f92672">+</span>str(request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;pass&#39;</span>))<span style="color:#f92672">+</span><span style="color:#e6db74">&#39; ssh -o StrictHostKeyChecking=no &#39;</span><span style="color:#f92672">+</span>request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;USER&#39;</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;@&#39;</span><span style="color:#f92672">+</span>e<span style="color:#f92672">+</span><span style="color:#e6db74">&#39; -C &#34;exit&#34;&#39;</span>)
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span> (<span style="color:#e6db74">&#34;successfully logged in using ssh with pass:&#34;</span><span style="color:#f92672">+</span>request<span style="color:#f92672">.</span>args<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;pass&#39;</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;, assigned IP &#34;</span><span style="color:#f92672">+</span>str(e)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; port 22&#34;</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;, Container ID: &#34;</span><span style="color:#f92672">+</span>str(q))
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Docker Container provisioned and tested SSH access&#34;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;mem session went wrong&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;cpu not found in session&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Error: comapared provision ID and is not same&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Id_no part gone wrong&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>link<span style="color:#f92672">.</span>run()
+</span></span></code></pre></div><p>Yeah I know code looks a bit weird! Since It was just a interview I didn&rsquo;t focus on security level much. But I do complete this before time. I think I took 5 hours continuous to understand docker library and another 2 hrs to build the whole code. Also I created a dockerfile for that ssh container.</p>
+<p>Interviewer was pretty much okay with my code but was not happy. He asked me some more questions in-depth which I didn&rsquo;t answer properly. The interviewer was good with my learning character and offered me the job. Ofcourse salary was more than I expected.</p>
+<p>I searched a lot and after that I understood its not in my code which made the interviewer unhappy but the questions he asked. He asked me questions regarding computing and its types and I knew only distrubuted and parallel. Hmmm&hellip;Now I know this very well.</p>
+<p>Let me conclude, If you are looking for a systems engineer job you should learn ofcourse, yes! one programming language, architecture of systems and devops tools are a plus.</p>
+<p>Thanks for reading! see you in next blog.</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; 2018, Jino Jose
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+    </small>
+</footer>
+</body>
+</html>
