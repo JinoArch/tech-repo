@@ -1,8 +1,16 @@
----
-title: "How Hugo worked for me??"
-date: Thu Oct 15 08:13:33 IST 2020
-tags: [issue]
----
++++
+author = "Jino Jose"
+title = "How Hugo worked for me??"
+date = "2018-01-07"
+description = "Hugo"
+tags = [
+    "Hugo",
+]
+
+categories = [
+    "Static Hosting Service"
+]
++++
 
 Since my BTech course completion I was thinking to make a blog site. I stepped out from college in 2018. Now its 2020. You now know how much late am I.
 

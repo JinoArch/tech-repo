@@ -1,8 +1,16 @@
----
-title: "Systems Engineer/ Devops Interview"
-date: Thu Oct 17 02:02:31 IST 2020
-tags: [build#3]
----
++++
+author = "Jino Jose"
+title = "Systems Engineer/ Devops Interview"
+date = "2018-12-03"
+description = "Systems Engineer Interview"
+tags = [
+    "Systems Engineer",
+]
+
+categories = [
+    "DevOps"
+]
++++
 
 Greetings! corona time.. Huh!? what to do? just job or gaming in mobile? Nope...After the start of corona first 2 month I took a course from [stephane maarek](https://www.udemy.com/user/stephane-maarek/) in udemy and by the last of second month I almost completed the course. I loved the course. After completing I was thinking what to do next and  decided to take interviews to make use of this year. By the way ..What you did? Nothing planned yet? You have to.
 

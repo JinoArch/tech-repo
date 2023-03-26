@@ -1,8 +1,16 @@
----
-title: "Understanding Kernel is fun"
-date: Thu Oct 15 08:13:33 IST 2020
-tags: [build#5]
----
++++
+author = "Jino Jose"
+title = "Understanding Kernel is fun"
+date = "2020-02-15"
+description = "linux kernal"
+tags = [
+    "kernal",
+]
+
+categories = [
+    "Linux"
+]
++++
 
 Bonsoir!
 
