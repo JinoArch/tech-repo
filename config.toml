@@ -1,4 +1,4 @@
-baseURL = "https://www.jinojose.in"
+baseURL = "https://jinojose.in"
 title = "Jinos Blog"
 languageCode = "en-us"
 theme = "devise"
