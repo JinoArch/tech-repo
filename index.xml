@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jinos Blog</title>
-    <link>https://www.jinojose.in/</link>
+    <link>https://jinojose.in/</link>
     <description>Recent content on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0000</lastBuildDate><atom:link href="https://jinojose.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>projects</title>
-      <link>https://www.jinojose.in/projects/projects/</link>
+      <link>https://jinojose.in/projects/projects/</link>
       <pubDate>Thu, 15 Oct 2020 08:13:33 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/projects/projects/</guid>
+      <guid>https://jinojose.in/projects/projects/</guid>
       <description>Get Latest Tags Github Action build using javascript to get previous and latest tags
 Blood Bank Blood bank website
 Chat messenger model A small chat messenger model built in flutter</description>
@@ -21,20 +21,20 @@ Chat messenger model A small chat messenger model built in flutter</description>
     
     <item>
       <title>Understanding Kernel is fun</title>
-      <link>https://www.jinojose.in/post/kernel/</link>
+      <link>https://jinojose.in/post/kernel/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/kernel/</guid>
+      <guid>https://jinojose.in/post/kernel/</guid>
       <description>Bonsoir!
 I was going through some of my kernel docs today and suddenly gotta mood to write on the same. If I speak in simple language, what is kernel? It is nothing but a set of code which knows how to communicate with hardwares. Linux is mostly written in C with a bit of assembly language. Actually this kernel code understands how to interpret your keypresses when you press a key and/or how to communicate with your hard drive to write bytes to it and much more.</description>
     </item>
     
     <item>
       <title>What a DevOps Engineer Does?</title>
-      <link>https://www.jinojose.in/post/devops/</link>
+      <link>https://jinojose.in/post/devops/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/devops/</guid>
+      <guid>https://jinojose.in/post/devops/</guid>
       <description>Eye opened for a new day again? Well, wish you all a good day.
 Most DevOps professional once was a systems administrator. Definitely, not neccessary. I have seen guys jumping from developer field to DevOps.
 I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6 months I jumped to the post of &amp;ldquo;build and release engineer&amp;rdquo;. In AMITI SOFTWARE TECHNOLOGIES I now work as a DevOps support engineer.</description>
@@ -42,19 +42,19 @@ I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6
     
     <item>
       <title>Systems Engineer/ Devops Interview</title>
-      <link>https://www.jinojose.in/post/systems_engineer/</link>
+      <link>https://jinojose.in/post/systems_engineer/</link>
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/systems_engineer/</guid>
+      <guid>https://jinojose.in/post/systems_engineer/</guid>
       <description>Greetings! corona time.. Huh!? what to do? just job or gaming in mobile? Nope&amp;hellip;After the start of corona first 2 month I took a course from stephane maarek in udemy and by the last of second month I almost completed the course. I loved the course. After completing I was thinking what to do next and decided to take interviews to make use of this year. By the way ..What you did?</description>
     </item>
     
     <item>
       <title>How Hugo worked for me??</title>
-      <link>https://www.jinojose.in/post/why-hugo/</link>
+      <link>https://jinojose.in/post/why-hugo/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/why-hugo/</guid>
+      <guid>https://jinojose.in/post/why-hugo/</guid>
       <description>Since my BTech course completion I was thinking to make a blog site. I stepped out from college in 2018. Now its 2020. You now know how much late am I.
 I will try my best to write my blogs in simple english.I mean, Anyway I know only simple english.
 2020 the pandemic year&amp;hellip;which made whole world to sit and spend time with family&amp;hellip;Looking from one side its good but it has its disadvantages too&amp;hellip;</description>
@@ -62,10 +62,10 @@ I will try my best to write my blogs in simple english.I mean, Anyway I know onl
     
     <item>
       <title></title>
-      <link>https://www.jinojose.in/about/</link>
+      <link>https://jinojose.in/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/about/</guid>
+      <guid>https://jinojose.in/about/</guid>
       <description>Amigos! Call me jino, a tech surfer and a crazy gopher, currently working as Senior Engineer-Devops at Rakuten Symphony.
 Work History:
 Rakuten India as DevOps Engineer Amiti Software Technologoes as Build and Release Engineer Nelux Technologies as System Admin Contact Me Delhi | kerala | bangalore.. I can be anywhere 😉</description>

@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jinos Blog</title>
-    <link>https://www.jinojose.in/tags/</link>
+    <link>https://jinojose.in/tags/</link>
     <description>Recent content in Tags on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kernal</title>
-      <link>https://www.jinojose.in/tags/kernal/</link>
+      <link>https://jinojose.in/tags/kernal/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/tags/kernal/</guid>
+      <guid>https://jinojose.in/tags/kernal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevOps</title>
-      <link>https://www.jinojose.in/tags/devops/</link>
+      <link>https://jinojose.in/tags/devops/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/tags/devops/</guid>
+      <guid>https://jinojose.in/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Systems Engineer</title>
-      <link>https://www.jinojose.in/tags/systems-engineer/</link>
+      <link>https://jinojose.in/tags/systems-engineer/</link>
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/tags/systems-engineer/</guid>
+      <guid>https://jinojose.in/tags/systems-engineer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://www.jinojose.in/tags/hugo/</link>
+      <link>https://jinojose.in/tags/hugo/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/tags/hugo/</guid>
+      <guid>https://jinojose.in/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>https://www.jinojose.in/tags/index/</link>
+      <link>https://jinojose.in/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/tags/index/</guid>
+      <guid>https://jinojose.in/tags/index/</guid>
       <description></description>
     </item>
     

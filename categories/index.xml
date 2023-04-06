@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Jinos Blog</title>
-    <link>https://www.jinojose.in/categories/</link>
+    <link>https://jinojose.in/categories/</link>
     <description>Recent content in Categories on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://www.jinojose.in/categories/linux/</link>
+      <link>https://jinojose.in/categories/linux/</link>
       <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/categories/linux/</guid>
+      <guid>https://jinojose.in/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevOps</title>
-      <link>https://www.jinojose.in/categories/devops/</link>
+      <link>https://jinojose.in/categories/devops/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/categories/devops/</guid>
+      <guid>https://jinojose.in/categories/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Static Hosting Service</title>
-      <link>https://www.jinojose.in/categories/static-hosting-service/</link>
+      <link>https://jinojose.in/categories/static-hosting-service/</link>
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/categories/static-hosting-service/</guid>
+      <guid>https://jinojose.in/categories/static-hosting-service/</guid>
       <description></description>
     </item>
     

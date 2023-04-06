@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jinos Blog</title>
-    <link>https://www.jinojose.in/projects/</link>
+    <link>https://jinojose.in/projects/</link>
     <description>Recent content in Projects on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0000</lastBuildDate><atom:link href="https://jinojose.in/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>projects</title>
-      <link>https://www.jinojose.in/projects/projects/</link>
+      <link>https://jinojose.in/projects/projects/</link>
       <pubDate>Thu, 15 Oct 2020 08:13:33 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/projects/projects/</guid>
+      <guid>https://jinojose.in/projects/projects/</guid>
       <description>Get Latest Tags Github Action build using javascript to get previous and latest tags
 Blood Bank Blood bank website
 Chat messenger model A small chat messenger model built in flutter</description>

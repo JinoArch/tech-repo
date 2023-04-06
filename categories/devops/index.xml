@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevOps on Jinos Blog</title>
-    <link>https://www.jinojose.in/categories/devops/</link>
+    <link>https://jinojose.in/categories/devops/</link>
     <description>Recent content in DevOps on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jinojose.in/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What a DevOps Engineer Does?</title>
-      <link>https://www.jinojose.in/post/devops/</link>
+      <link>https://jinojose.in/post/devops/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/devops/</guid>
+      <guid>https://jinojose.in/post/devops/</guid>
       <description>Eye opened for a new day again? Well, wish you all a good day.
 Most DevOps professional once was a systems administrator. Definitely, not neccessary. I have seen guys jumping from developer field to DevOps.
 I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6 months I jumped to the post of &amp;ldquo;build and release engineer&amp;rdquo;. In AMITI SOFTWARE TECHNOLOGIES I now work as a DevOps support engineer.</description>
@@ -21,10 +21,10 @@ I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6
     
     <item>
       <title>Systems Engineer/ Devops Interview</title>
-      <link>https://www.jinojose.in/post/systems_engineer/</link>
+      <link>https://jinojose.in/post/systems_engineer/</link>
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jinojose.in/post/systems_engineer/</guid>
+      <guid>https://jinojose.in/post/systems_engineer/</guid>
       <description>Greetings! corona time.. Huh!? what to do? just job or gaming in mobile? Nope&amp;hellip;After the start of corona first 2 month I took a course from stephane maarek in udemy and by the last of second month I almost completed the course. I loved the course. After completing I was thinking what to do next and decided to take interviews to make use of this year. By the way ..What you did?</description>
     </item>
     
