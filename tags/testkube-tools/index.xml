@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testkube Tools on Jinos Blog</title>
+    <link>https://jinojose.in/tags/testkube-tools/</link>
+    <description>Recent content in Testkube Tools on Jinos Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018, Jino Jose</copyright>
+    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/tags/testkube-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tried Testkube Today</title>
+      <link>https://jinojose.in/post/testkube/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jinojose.in/post/testkube/</guid>
+      <description>Hope you all are having a good day.
+I tried an very interesting testing tool today. Testkube. what should I call it? 😄 Hmm&amp;hellip; A testing orcherstrator which runs in k8s. Yes thats what it is. A centralised place where all your exisiting testing tool meets.
+Bringing all testing tools to one place brings more visibilty and All the test runs on k8s so no usual CI/CD dependencies. What I loved was the setup.</description>
+    </item>
+    
+  </channel>
+</rss>

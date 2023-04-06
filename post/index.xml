@@ -9,7 +9,7 @@
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
     <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>On-demand Github Runner Design?</title>
+      <title>On-demand Self Hosted Github Runner Design</title>
       <link>https://jinojose.in/post/github_runner/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
       
@@ -18,6 +18,17 @@
 Lets design an on-demand github hosted runner this time. You know.. nowadays CI/CD are shifting to GHA from jenkins. Yeah I know GHA is still not matured enough to tackle jenkins. But it has a speacial advantage over jenkins. AUTOMATION. Automation becomes smoother with GHA. The topic..
 Self Hosted Runners.
 In my organisation we still don&amp;rsquo;t have an on-demand github self hosted runner. I think most of the companies are running self hosted runners in k8s to avoid expense and to get high performance.</description>
+    </item>
+    
+    <item>
+      <title>Tried Testkube Today</title>
+      <link>https://jinojose.in/post/testkube/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jinojose.in/post/testkube/</guid>
+      <description>Hope you all are having a good day.
+I tried an very interesting testing tool today. Testkube. what should I call it? 😄 Hmm&amp;hellip; A testing orcherstrator which runs in k8s. Yes thats what it is. A centralised place where all your exisiting testing tool meets.
+Bringing all testing tools to one place brings more visibilty and All the test runs on k8s so no usual CI/CD dependencies. What I loved was the setup.</description>
     </item>
     
     <item>
