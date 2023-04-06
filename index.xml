@@ -9,7 +9,7 @@
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
     <lastBuildDate>Thu, 15 Oct 2020 08:13:33 +0000</lastBuildDate><atom:link href="https://jinojose.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dynamic Github Runner Design?</title>
+      <title>On-demand Github Runner Design?</title>
       <link>https://jinojose.in/post/github_runner/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
       
@@ -67,9 +67,11 @@ I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6
       <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://jinojose.in/post/why-hugo/</guid>
-      <description>Since my BTech course completion I was thinking to make a blog site. I stepped out from college in 2018. Now its 2020. You now know how much late am I.
-I will try my best to write my blogs in simple english.I mean, Anyway I know only simple english.
-2020 the pandemic year&amp;hellip;which made whole world to sit and spend time with family&amp;hellip;Looking from one side its good but it has its disadvantages too&amp;hellip;</description>
+      <description>Since my BTech course completion I was thinking to make a blog site. 2018 - College life ends, Blog life starts 🤪.
+Good Fun years are all done.. Its time to walk towards my dream.
+Oh! I am moving away from my title. So lets talk about HUGO.
+I searched a lot for blog creation and was disappointed until I found HUGO.
+Mostly I uses duckduckgo and ecosia as my searchengines.</description>
     </item>
     
     <item>
@@ -80,7 +82,7 @@ I will try my best to write my blogs in simple english.I mean, Anyway I know onl
       <guid>https://jinojose.in/about/</guid>
       <description>Amigos! Call me jino, a tech surfer and a crazy gopher, currently working as Senior Engineer-Devops at Rakuten Symphony.
 Work History:
-Rakuten India as DevOps Engineer Amiti Software Technologoes as Build and Release Engineer Nelux Technologies as System Admin Contact Me Delhi | kerala | bangalore.. I can be anywhere 😉</description>
+Rakuten India as DevOps Engineer Amiti Software Technologies as Build and Release Engineer Nelux Technologies as System Admin Contact Me Delhi | kerala | bangalore.. I can be anywhere 😉</description>
     </item>
     
   </channel>
