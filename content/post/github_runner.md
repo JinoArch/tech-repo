@@ -1,6 +1,6 @@
 +++
 author = "Jino Jose"
-title = "On-demand Github Runner Design?"
+title = "On-demand Self Hosted Github Runner Design"
 date = "2023-04-06"
 description = "Github Runner"
 tags = [
@@ -161,3 +161,7 @@ spec:
         path: /
         pathType: Prefix
 ```
+
+
+###### 📌 HINTS:📌
+- [Expose k8s service via API gateway](https://aws.amazon.com/blogs/containers/integrate-amazon-api-gateway-with-amazon-eks/) 
