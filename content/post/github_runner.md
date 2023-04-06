@@ -1,6 +1,6 @@
 +++
 author = "Jino Jose"
-title = "Dynamic Github Runner Design?"
+title = "On-demand Github Runner Design?"
 date = "2023-04-06"
 description = "Github Runner"
 tags = [

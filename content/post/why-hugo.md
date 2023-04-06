@@ -12,11 +12,9 @@ categories = [
 ]
 +++
 
-Since my BTech course completion I was thinking to make a blog site. I stepped out from college in 2018. Now its 2020. You now know how much late am I.
+Since my BTech course completion I was thinking to make a blog site. 2018 - College life ends, Blog life starts 🤪. 
 
-I will try my best to write my blogs in simple english.I mean, Anyway I know only simple english.
-
-2020 the pandemic year...which made whole world to sit and spend time with family...Looking from one side its good but it has its disadvantages too...
+Good Fun years are all done.. Its time to walk towards my dream.
 
 Oh! I am moving away from my title. So lets talk about HUGO.
 
