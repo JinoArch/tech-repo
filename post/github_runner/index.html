@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en-us"><head>
+    <title>Jinos Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Github Runner" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/theme.min.css">
+
+    
+    
+    
+
+    
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../images/jino.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+                    
+                        Jino Jose
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    Golang | DevOps |  AI/ML
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/projects/index.html" title="Projects">Projects</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/JinoArch" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://www.linkedin.com/in/jino-jose-296928198" target="_blank">
+                            <i class="fab fa-linkedin-in fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Dynamic Github Runner Design?</h3>
+            
+            <small class="text-muted">Published April 6, 2023</small>
+        </div>
+
+        <article>
+            <p>Whoo hoo! Thanks for visiting again. 🎉</p>
+<p>Lets design an on-demand github hosted runner this time. You know.. nowadays CI/CD are shifting to GHA from jenkins. Yeah I know GHA is still not matured enough to tackle jenkins. But it has a speacial advantage over jenkins. AUTOMATION. Automation becomes smoother with GHA. The topic..</p>
+<p>Self Hosted Runners.</p>
+<p>In my organisation we still don&rsquo;t have an on-demand github self hosted runner. I think most of the companies are running self hosted runners in k8s to avoid expense and to get high performance. I love it. Question is are we saving resources too? Definitely not hard to say. Nope. 😶. Does resource matter in k8s 🤣 ? Yes.</p>
+<p>Here is a basic design for GH runners to run ON-DEMAND.</p>
+<p><img src="../../images/runner_design.png" alt=""></p>
+<h6 id="the-flow">🧣THE FLOW🧣</h6>
+<p><strong>Box 1</strong>: Setup the github repository webhook (see MISC section if you never configured one)</p>
+<p><strong>Box 2</strong>: We need a k8s operator which can control the api-server we created.</p>
+<p><strong>Box 3</strong>: Api-server should be capable of receiving payload and create a k8s job to spin up a github runner pod and once done shut it down.</p>
+<p><strong>Box 4</strong>: Running k8s pod github runner.</p>
+<h6 id="-misc">📌 MISC📌</h6>
+<p>🎃 How to setup webhook?</p>
+<p>Configure the repository to send json payload when a workflow event is triggered.</p>
+<p><img src="../../images/webhook.png" alt=""></p>
+<ul>
+<li>
+<p>Provide the k8s application URL we configured in <code>Payload URL</code></p>
+</li>
+<li>
+<p><code>Content-type</code> application/json</p>
+</li>
+<li>
+<p><code>Which events would you like to trigger this webhook?</code> section select <code>Let me select individual events</code> &ndash;&gt; <code>workflow jobs and runs</code> and save.</p>
+</li>
+</ul>
+<p>🎃 An example code snippet of api server (need to add more functionalities)</p>
+<pre tabindex="0"><code># Code
+package main
+
+import (
+    &#34;log&#34;
+    &#34;net/http&#34;
+    &#34;io/ioutil&#34;
+    &#34;github.com/tidwall/gjson&#34;
+)
+
+func test(rw http.ResponseWriter, req *http.Request) {
+    body, err := ioutil.ReadAll(req.Body)
+    if err != nil {
+        panic(err)
+    }
+    log.Println(string(body))
+    value := gjson.Get(string(body), &#34;repository.full_name&#34;)
+    log.Println(value.String())
+}
+
+func main() {
+    http.HandleFunc(&#34;/test&#34;, test)
+    log.Fatal(http.ListenAndServe(&#34;:8082&#34;, nil))
+}
+</code></pre><p>🎃 Build a container image, <code>go build</code> can help you on this or use below ones</p>
+<pre tabindex="0"><code># DockerFile
+FROM --platform=$BUILDPLATFORM golang:1.20-alpine AS build-env
+COPY . /app
+WORKDIR /app
+ARG TARGETOS
+ARG TARGETARCH
+RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
+    go build -ldflags=&#34;-s -w&#34; -o myapp main.go
+
+# Create image
+FROM scratch
+COPY --from=build-env /app /
+ENTRYPOINT [&#34;/myapp&#34;]
+</code></pre><p>then build it <code>docker build --build-arg GITHUB_TOKEN=&lt;token&gt; --build-arg RUNNER_VERSION=&lt;runner version without v suffix&gt; --build-arg RUNNER_GROUP=&lt;runner group name&gt; -t &lt;image name&gt; .</code></p>
+<p>🎃 If you want to deploy in k8s</p>
+<pre tabindex="0"><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhook-receiver
+spec:
+  selector:
+    matchLabels:
+      app: webhook
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: webhook
+    spec:
+      containers:
+      - name: webhook-receiver
+        image: &lt;Image repository, name and tag&gt;
+        ports:
+        - containerPort: 8082
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webhook-receiver-service
+spec:
+  selector:
+    app: webhook
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/cors-allow-credentials: &#34;false&#34;
+    nginx.ingress.kubernetes.io/cors-allow-methods: GET
+    nginx.ingress.kubernetes.io/enable-cors: &#34;true&#34;
+    nginx.ingress.kubernetes.io/force-ssl-redirect: &#34;true&#34;
+    nginx.ingress.kubernetes.io/ssl-redirect: &#34;true&#34;
+  name: webhook-receiver-ingress
+  namespace: dynamic-runner
+spec:
+  ingressClassName: jinos-class
+  rules:
+  - host: dynamic-runner.shared-np.rr-it.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: webhook-receiver-service
+            port:
+              number: 8082
+        path: /
+        pathType: Prefix
+</code></pre>
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; 2018, Jino Jose
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+        and <a href="https://github.com/austingebauer/devise" target="_blank">Devise</a>
+    </small>
+</footer>
+</body>
+</html>

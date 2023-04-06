@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DevOps on Jinos Blog</title>
-    <link>https://jinojose.in/tags/devops/</link>
-    <description>Recent content in DevOps on Jinos Blog</description>
+    <title>Design on Jinos Blog</title>
+    <link>https://jinojose.in/categories/design/</link>
+    <description>Recent content in Design on Jinos Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/categories/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dynamic Github Runner Design?</title>
       <link>https://jinojose.in/post/github_runner/</link>
@@ -18,17 +18,6 @@
 Lets design an on-demand github hosted runner this time. You know.. nowadays CI/CD are shifting to GHA from jenkins. Yeah I know GHA is still not matured enough to tackle jenkins. But it has a speacial advantage over jenkins. AUTOMATION. Automation becomes smoother with GHA. The topic..
 Self Hosted Runners.
 In my organisation we still don&amp;rsquo;t have an on-demand github self hosted runner. I think most of the companies are running self hosted runners in k8s to avoid expense and to get high performance.</description>
-    </item>
-    
-    <item>
-      <title>What a DevOps Engineer Does?</title>
-      <link>https://jinojose.in/post/devops/</link>
-      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jinojose.in/post/devops/</guid>
-      <description>Eye opened for a new day again? Well, wish you all a good day.
-Most DevOps professional once was a systems administrator. Definitely, not neccessary. I have seen guys jumping from developer field to DevOps.
-I started my career as a systems administrator in NELUX TECHNOLOGIES and after 6 months I jumped to the post of &amp;ldquo;build and release engineer&amp;rdquo;. In AMITI SOFTWARE TECHNOLOGIES I now work as a DevOps support engineer.</description>
     </item>
     
   </channel>

@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018, Jino Jose</copyright>
-    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jinojose.in/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Github Runner Design?</title>
+      <link>https://jinojose.in/post/github_runner/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jinojose.in/post/github_runner/</guid>
+      <description>Whoo hoo! Thanks for visiting again. 🎉
+Lets design an on-demand github hosted runner this time. You know.. nowadays CI/CD are shifting to GHA from jenkins. Yeah I know GHA is still not matured enough to tackle jenkins. But it has a speacial advantage over jenkins. AUTOMATION. Automation becomes smoother with GHA. The topic..
+Self Hosted Runners.
+In my organisation we still don&amp;rsquo;t have an on-demand github self hosted runner. I think most of the companies are running self hosted runners in k8s to avoid expense and to get high performance.</description>
+    </item>
+    
     <item>
       <title>Understanding Kernel is fun</title>
       <link>https://jinojose.in/post/kernel/</link>
