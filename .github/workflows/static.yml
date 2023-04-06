@@ -32,7 +32,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: prinzpiuz/prinzpiuz.github.io
+          external_repository: jinoarch/jinoarch.github.io
           publish_dir: ./public
           publish_branch: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
